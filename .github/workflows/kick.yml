@@ -40,7 +40,7 @@ jobs:
           rm "${{ github.event.inputs.file_name }}"
 
       - name: GH Release
-        uses: softprops/action-gh-release@v2.3.2
+        uses: softprops/action-gh-release@v2.3.3
         with:
           files: /mnt/workspace/*
           name: ${{ github.event.inputs.file_name }}
